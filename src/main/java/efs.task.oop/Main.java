@@ -21,16 +21,16 @@ public class Main {
 
         while(Monsters.getMonstersHealth() > 0){
             if(Monsters.andariel.getHealth() > 0) {
-                epic_fight(kashya, Monsters.andariel);
-                epic_fight(gheed, Monsters.andariel);
-                epic_fight(warriv, Monsters.andariel);
-                epic_fight(flawia, Monsters.andariel);
+                epicFight(kashya, Monsters.andariel);
+                epicFight(gheed, Monsters.andariel);
+                epicFight(warriv, Monsters.andariel);
+                epicFight(flawia, Monsters.andariel);
             }
             if(Monsters.blacksmith.getHealth() > 0){
-                epic_fight(kashya, Monsters.blacksmith);
-                epic_fight(gheed, Monsters.blacksmith);
-                epic_fight(warriv, Monsters.blacksmith);
-                epic_fight(flawia, Monsters.blacksmith);
+                epicFight(kashya, Monsters.blacksmith);
+                epicFight(gheed, Monsters.blacksmith);
+                epicFight(warriv, Monsters.blacksmith);
+                epicFight(flawia, Monsters.blacksmith);
             }
         }
         System.out.println("Obozowisko ocalone!");
@@ -40,7 +40,7 @@ public class Main {
         akara.sayHello();
     }
 
-    public static void epic_fight(Villager vil, Monster mon){
+    public static void epicFight(Villager vil, Monster mon){
         System.out.println("Potwory posiadaja jeszcze " + mon.getHealth() + " punkty zycia");
         System.out.println("Aktualnie walczacy osadnik to " + vil.name);
         vil.attack(mon);

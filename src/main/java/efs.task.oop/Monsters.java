@@ -22,7 +22,7 @@ public class Monsters {
         @Override
         public void takeHit(int damage) {
             this.setHealth(this.getHealth() - (5 + damage));
-            monstersHealth -= (5+damage);
+            monstersHealth -= (5 + damage);
         }
     };
 
