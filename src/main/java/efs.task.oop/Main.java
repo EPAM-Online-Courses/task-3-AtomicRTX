@@ -16,7 +16,6 @@ public class Main {
         warriv.sayHello();
         flawia.sayHello();
 
-
         Object objectDeckardCain = deckardCain;
         Object objectAkara = akara;
 
